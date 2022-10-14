@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Score War</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+        <div class = header>
+        <img class = "suit" src="images/suits1.jpg" alt="suits1" />
+      <img class = "logo" src="images/ScoreTitle.png" alt="title" height="325" width="500"/>
+      <img class = "suit" src="images/suits2.jpg" alt="suits2"  />
+     
+    </div>
+
+  <body>
+      
+    <div class = "container">
+        <div class = "protector">
+    <div class = "howTo">
+        <p><strong>How to Play:</strong></p>
+        <ul>
+            <li> Input what you would like the winning score to be</li>
+            <li> Press Generate Deck</li>
+            <li> Press Deal until one player wins</li>
+            <li> <strong>Note:</strong> Ties are beaten using suits. Highest: Spades, Hearts, Diamonds, Lowest: Clubs</li>
+        </ul>
+    </div>
+    </div>
+ 
+     <div class = "gamePlay">
+      <form>
+          <label class = "lab">What Score Would You Like to Play To?</label>
+          <input id="winningScore" type="text"></input>
+          <input id="generate" type="submit" value="Generate Deck"></input>
+      </form>
+      <form>
+          <input id="deal" type="button" value="Deal" style = "display: none;"></input>
+      </form>        
+    <p id = "winner" style = "display: none;"></p>
+    
+    <div class = "Players">
+        <div class = "Player">
+            <p><strong>Player 1 Score:</strong></p>
+            <div id = p1Score></div>
+            <div id = "card1"></div>
+
+        </div>
+        <div class = "Player">
+            <p><strong>Player 2 Score:</strong></p>
+            <div id = p2Score></div>
+            <div id = "card2"></div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script text="type/javascript" src="script.js">
+    </script>
+
+  </body>
+  <div class = "footer">
+    	<a href='https://github.com/BYU-CS-260/lab2-javascript-ekRoberts.git'> GitHub Link</a>
+	</div>	
+</html>
